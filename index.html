@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form
+        action="#"
+        name="myform"
+        onsubmit="return validateForm()"
+        method="post"
+        autocomplete="on"
+        id="form"
+      >
+        <h1>Contact Form</h1>
+        <div class="form-box">
+          <label for="username">Name <span class="red">*</span></label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            autocomplete="name"
+            inputmode="text"
+            maxlength="40"
+          />
+          <div class="error" id="nameerror"></div>
+        </div>
+        <div class="form-box">
+          <label for="email">Email <span class="red">*</span></label>
+          <input
+            type="email"
+            id="email"
+            autocomplete="email"
+            inputmode="email"
+          />
+          <div class="error" id="emailerror"></div>
+        </div>
+        <div class="form-box">
+          <label for="phone">phone number <span class="red">*</span></label>
+          <input
+            type="tel"
+            id="phone"
+            autocomplete="tel"
+            inputmode="tel"
+            minlength="8"
+            maxlength="12"
+          />
+          <div class="error" id="phoneerror"></div>
+        </div>
+        <div class="form-box">
+          <label for="subject">subject <span class="red">*</span></label>
+          <input type="text" id="subject" name="subject" />
+          <div class="error" id="subjecterror"></div>
+        </div>
+        <div class="form-box">
+          <label for="message">message</label>
+          <textarea name="message" id="message" cols="30" rows="5"></textarea>
+          <div class="error"></div>
+        </div>
+        <div class="form-box">
+          <input type="submit" value="submit" class="submit" />
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&family=League+Spartan:wght@200;700&family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
+
+/* ------------------------------ */
+/* common styles here  */
+/* ------------------------------ */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-family: "Jost", sans-serif;
+    background: linear-gradient(to bottom, #28459E,#1F86CB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+form *{
+  width: 100%;
+  max-height: 13vh;
+}
+form{
+  background-color: #1F86CB;
+  max-width: 600px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 10px solid white;
+  padding: 2rem 5rem;
+  box-shadow: 0px 0px 2px rgb(23, 242, 220);
+  
+}
+
+
+h1{
+text-align: center;
+font-size: 3rem;
+text-shadow: 1px 1px 5px rgb(175, 220, 218);
+font-weight: bolder;
+}
+
+form > .form-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 1.5rem 0rem;
+}
+
+.form-box label{
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.form-box input, 
+.form-box textarea{
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  border: 2px solid rgb(255, 254, 254);
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.red{
+  color: red;
+  font-weight: bold;
+}
+
+input.submit{
+  background-color: #28459E;
+  width: 10rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 80px 5px 50px 50px;
+  color: white;
+  box-shadow: 1px 1px 3px rgb(13, 204, 242);
+  font-size:26px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.form-box > input:focus,
+.form-box textarea:focus {
+  outline: none;
+}
+
+.error{
+  color: red;
+  padding:1px 4px;
+  
+}
